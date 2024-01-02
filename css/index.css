@@ -1,0 +1,98 @@
+body {
+    background-color: aliceblue;
+    color: rgb(7, 7, 7);
+    font-family: 'Times New Roman', Times, serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #151b54;
+    font-family: 'Times New Roman', Times, serif font-size;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+
+}
+
+#Experience ul,
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#Experience li,
+#skills li {
+    background-color: #c1dbee;
+    margin: 2px 0;
+    padding: 10px;
+
+}
+
+form [name="leave_message"] {
+    max-width: 400px;
+    margin: o auto;
+}
+
+form label {
+    font-size: 16px;
+    color: black;
+    display: block;
+    margin-bottom: 5px;
+
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(72, 72, 234);
+    border-radius: 5px;
+
+}
+
+form button [type="submit"] {
+    background-color: blanchedalmond;
+    color: antiquewhite;
+    padding: 10 px 20 px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#messages ul {
+    list-style: none;
+    padding: 0;
+}
+
+#messages li {
+    background-color: #82caff;
+    margin: 10 px 0;
+    padding: 15px;
+}
+
+#messages button {
+    background-color: #82caff;
+    color: antiquewhite;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 20px;
+    background-color: #c1dbee;
+    color: #151b54;
+    text-align: center;
+}
