@@ -1,7 +1,42 @@
+header {
+    background-color: #6a91d5;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    text-align: left;
+    font-size: large;
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
 body {
     background-color: aliceblue;
     color: rgb(7, 7, 7);
-    font-family: 'Times New Roman', Times, serif
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 h1,
@@ -11,34 +46,31 @@ h4,
 h5,
 h6 {
     color: #151b54;
-    font-family: 'Times New Roman', Times, serif font-size;
+    font-family: 'Arial', sans-serif;
     font-size: 24px;
     font-weight: bold;
+    margin: 0;
 }
 
 section {
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 40px;
 
 }
 
-#Experience ul,
-#skills ul {
+#Experience ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
     list-style: none;
     padding: 0;
 }
 
-#Experience li,
-#skills li {
-    background-color: #c1dbee;
-    margin: 2px 0;
-    padding: 10px;
-
-}
-
 form [name="leave_message"] {
+    display: flex;
+    flex-direction: column;
     max-width: 400px;
-    margin: o auto;
+    margin: 0 auto;
 }
 
 form label {
@@ -47,6 +79,17 @@ form label {
     display: block;
     margin-bottom: 5px;
 
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
 }
 
 form input[type="text"],
@@ -91,7 +134,7 @@ form button [type="submit"] {
 }
 
 footer {
-    padding: 20px;
+    padding: 10px;
     background-color: #c1dbee;
     color: #151b54;
     text-align: center;
